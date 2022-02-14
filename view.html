@@ -63,6 +63,7 @@
                     .then(function (response) {
                         let responseData = response.data
                         console.log("responseData: ", responseData);
+                        
 
                         posts.innerHTML = "";
 
@@ -107,8 +108,8 @@
                     .then(function (response) {
                         let responseData = response.data
                         console.log("responseData: ", responseData);
-                        // ((
-                        alert(responseData);
+                        alert(responseData)
+                      
                     })
                     .catch(function (error) {
                         // handle error

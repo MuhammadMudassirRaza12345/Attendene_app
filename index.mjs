@@ -154,6 +154,7 @@ app.post('/attendance', (req, res) => {
     newAttendance.save((err, saved) => {
         if (!err) {
             res.send(`${req.body.studentName}'s Attendance is marked in database 🎊`);
+            // res.send(alert`(${req.body.studentName}'s Attendance is marked in database 🎊`)
         } else {
             res.status(500).send("some thing went wrong, please try later");
         }
